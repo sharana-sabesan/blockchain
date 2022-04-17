@@ -97,4 +97,4 @@ for block in range(total_blocks):
 # ^ the total blocks, said by user are created, with BLOCK_LIMIT transactions in each block
 # ^ each transaction has random sender, reciever, and amount
 
-chain.add_blockchain.print_blockchain()
+chain.print_blockchain()
