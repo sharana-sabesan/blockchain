@@ -94,7 +94,10 @@ chain = Chain()
 for block in range(total_blocks):
     for transaction in range(BLOCK_LIMIT):
         chain.add_transaction(names.get_first_name(), names.get_first_name(), random.randrange(0, 2**31-1))
+        # ^ each transaction has random sender, reciever, and amount
+     chain.add_block()
+     # block added to Chain object
 # ^ the total blocks, said by user are created, with BLOCK_LIMIT transactions in each block
-# ^ each transaction has random sender, reciever, and amount
+
 
 chain.print_blockchain()
